@@ -1,19 +1,18 @@
 .. _examples:
 
 ========
-Examples
+Exemples
 ========
 
-Crawling paginated listings
-===========================
+Crawler des listings paginés
+============================
 
-Most e-commerce sites use pagination to spread results across multiple pages.
+La plupart des sites de e-commerce utilisent la pagination pour afficher le résultat sur plusieurs pages de leur site.
 
-When crawling these sites with Portia, there are some best practices you should follow:
-
-	* Use the target categories as start pages.
-	* Use URL follow patterns to limit Portia to only visit category and article pages.
-
+Quand vous crawlez de tels sites, il y a quelques bonnes pratiques a respecter:
+	* Utilisez la page de catégories comme page de démarrage.
+	* Utilisez "URL follow patterns" pour limiter Portia aux seules pages de catégories et d'articles.
+  
 This will prevent Portia from visiting unnecessary pages so you can crawl the items a lot faster.
 
 Let's use `timberlandonline.co.uk <http://www.timberlandonline.co.uk>`_ as an example. Say you want to only scrape products from the `boots <http://www.timberlandonline.co.uk/en/men-footwear-boots>`_ and `shoes <http://www.timberlandonline.co.uk/en/men-footwear-shoes>`_ categories. You can `create a spider <getting-started>`_ and add the categories to its start URLs:
